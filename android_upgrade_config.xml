@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application env="stg" os="android">
+    <Note>
+        <!-- 公告状态：提示后退出（0）; 提示后继续（1）；其他不提示 -->
+        <NoteState>2</NoteState>
+        <NoteMsg></NoteMsg>
+        <NoteTitle></NoteTitle>
+        <NoteTimestamp></NoteTimestamp>
+    </Note>
+    <Upgrade>
+        <!-- 默认升级版本 -->
+        <CommonUpgrade>
+            <!-- 需要升级到的最新版本 -->
+            <NewVersion>10.3.9</NewVersion>
+            <!-- 升级状态：建议升级（0）; 强制升级（1）; 不提示升级（2） -->
+            <UpdateState>0</UpdateState>
+            <!-- 是否需要升级前清除客户端数据 -->
+            <ClearData>false</ClearData>
+            <!-- 升级提示 -->
+            <UpdateTip>
+                <![CDATA[
+                    你有新版本，请升级
+                ]]>
+            </UpdateTip>
+            <!-- 新版本下载地址 -->
+            <UpdateAddress>
+                http://biztest.szse.cn:81/webstatic/mobileresources/nowoa/config/android/nmoa-release-stg-1.0.11-20151116082827.apk
+            </UpdateAddress>
+            <!-- 版本更新说明 -->
+            <UpdateDetails>
+                <![CDATA[
+                    一、支持收文、发文、签报、通用表格、请休假、出差、补考勤7大流程审批处理<br>二、可发起请休假、出差、补考勤申请
+                ]]>
+            </UpdateDetails>
+            <!-- 新版本大小 -->
+            <AppSize>3544KB</AppSize>
+            <!-- 新版本发布时间 -->
+            <PublishTime>2015年11月16日</PublishTime>
+        </CommonUpgrade>
+        <!-- 以下针对特定版本升级，可用不配置 -->
+        <UpgradeList type="List">
+            <Element>
+                <!-- 某个版本 -->
+                <Version>2.3.9</Version>
+                <!-- 比较符：less or equal小于等于上面版本号的版本;equal等于,less小于 -->
+                <Compare>less or equal</Compare>
+                <!-- 升级状态：建议升级（0）; 强制升级（1）; 不提示升级（2） -->
+                <UpdateState>1</UpdateState>
+                <!-- 是否需要升级前清除客户端数据 -->
+                <ClearData>false</ClearData>
+            </Element>
+        </UpgradeList>
+    </Upgrade>
+</Application>
